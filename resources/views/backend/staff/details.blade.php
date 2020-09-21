@@ -3,7 +3,7 @@
 
 @section('content')
   <h1>Staff Detail</h1>
-  <a href="{{route('staff.index')}}">Back</a>
+  
   
   <img src="{{asset($staff->profile)}}" alt="Staff Profile" width="150px" height="200px">
 
@@ -11,5 +11,6 @@
   <p>Phone No: {{$staff->phoneno}}</p>
   <p>Salary: {{$staff->salary}}</p>
   <p>Address: {{$staff->address}}</p>
+  <a href="{{route('staff.index')}}" class="btn btn-primary">Back</a>
 
 @endsection
